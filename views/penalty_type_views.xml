@@ -25,7 +25,8 @@
                             <field name="name" />
                         </group>
                         <group>
-                            <field name="amount" />
+                            <field name="currency_id" invisible="1" />
+                            <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
                         </group>
                     </group>
                 </sheet>
@@ -47,5 +48,13 @@
             </p>
         </field>
     </record>
+
+    <!-- Menu item for penalty.type -->
+    <menuitem 
+        id="menu_penalty_type" 
+        name="Penalty Type" 
+        parent="menu_penalty_root" 
+        action="action_penalty_type" 
+        sequence="1"/>
 
 </odoo>

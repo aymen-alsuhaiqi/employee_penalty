@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Employee_penalty',
-    'version': '',
+    'version': '1.0',
     'summary': """ Employee_penalty Summary """,
     'author': 'AMT',
     'depends': ['base', 'hr'],
     'data': [
         'security/ir.model.access.csv',
+        'views/base_menu.xml',
         'views/penalty_type_views.xml',
+        'views/employee_penalty_views.xml'
     ],
     
     'application': True,
