@@ -55,6 +55,6 @@
         name="Penalty Type" 
         parent="menu_penalty_root" 
         action="action_penalty_type" 
-        sequence="1"/>
+        sequence="10"/>
 
 </odoo>

@@ -4,8 +4,9 @@
     'version': '1.0',
     'summary': """ Employee_penalty Summary """,
     'author': 'AMT',
-    'depends': ['base', 'hr'],
+    'depends': ['base', 'hr', 'hr_payroll'],
     'data': [
+        'data/payslip_input_type.xml',
         'security/ir.model.access.csv',
         'views/base_menu.xml',
         'views/penalty_type_views.xml',
