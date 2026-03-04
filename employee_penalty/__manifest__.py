@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Employee_penalty',
+    'name': 'Employee Penalty',
     'version': '1.0',
-    'summary': """ Employee_penalty Summary """,
+    'summary': """ Employee Penalty Summary """,
     'author': 'AMT',
     'depends': ['base', 'hr', 'hr_payroll'],
     'data': [

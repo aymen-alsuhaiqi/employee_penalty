@@ -4,6 +4,7 @@
     <menuitem
         id="menu_penalty_root"
         name="Employees Deductions"
+        web_icon="employee_penalty,static/description/icon.png"
         sequence="10"/>
 
 </odoo>

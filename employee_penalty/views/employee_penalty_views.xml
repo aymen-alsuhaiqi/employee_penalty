@@ -11,7 +11,7 @@
                 <field name="penalty_type_id"/>
                 <field name="date"/>
                 <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
-                <field name="state"/>
+                <field name="state" widget="badge" decoration-success="state == 'approved'" decoration-warning="state == 'draft'" decoration-danger="state == 'rejected'" decoration-info="state == 'cancelled'"/>
             </list>
         </field>
     </record>
