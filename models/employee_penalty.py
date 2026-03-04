@@ -41,6 +41,7 @@ class EmployeePenalty(models.Model):
         ('11','November'),
         ('11','Decemper'),
     ], compute="_compute_month", inverse="_inverse_month",store=True)
+    year = fields.Integer(compute="_compute_year" ,store=True)
 
     @api.depends('employee_id','penalty_type_id')
     def _compute_display_name(self):
@@ -60,6 +61,12 @@ class EmployeePenalty(models.Model):
 
     def _inverse_month(self):
         pass
+
+    @api.depends('date')
+    def _compute_year(self):
+        for record in self:
+            if record.date:
+                record.year = str(record.date.year)
 
     def action_approve(self):
         for record in self:

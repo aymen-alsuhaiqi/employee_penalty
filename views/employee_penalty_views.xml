@@ -43,6 +43,9 @@
                             <group>
                                 <field name="month" readonly="state != 'draft'"/>
                             </group>
+                            <group>
+                                <field name="year" widget="char"/>
+                            </group>
                         </group>
                         <group>
                             <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>

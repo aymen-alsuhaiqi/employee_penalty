@@ -30,7 +30,8 @@ class HrPayslipPenalty(models.Model):
         penalties = self.env['employee.penalty'].search([
             ('employee_id','=',self.employee_id.id),
             ('state','=','approved'),
-            ('month','=',str(self.date_from.month))
+            ('month','=',str(self.date_from.month)),
+            ('year','=',self.date_from.year)
             ])
         self.input_line_ids.search([('input_type_id','=',input_type_penalty_id)]).unlink()
         for penalty in penalties:
