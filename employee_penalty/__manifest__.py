@@ -12,7 +12,7 @@
         'views/penalty_type_views.xml',
         'views/employee_penalty_views.xml'
     ],
-    
+    'images': ['static/description/banner.png'],
     'application': True,
     'installable': True,
     'auto_install': False,
